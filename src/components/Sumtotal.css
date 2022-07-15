@@ -1,0 +1,17 @@
+.sumtotal {
+    display: flex;
+    margin: 10px;
+}
+.sumtotal button{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 468px){
+    .sumtotal {
+        display:block;
+    }
+    .sumtotal button{
+        margin: 0px;
+        margin-top: 10px;
+    }
+}

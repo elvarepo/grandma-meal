@@ -1,0 +1,50 @@
+.home{
+    padding-bottom: 50px;
+    color: white;
+    background: linear-gradient(#403e40, #121416);
+}
+.banner {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner__inner {
+    margin: 5px;
+    padding: 20px;
+    width: 70%;
+    border: 2px solid #957d56;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.banner__inner  p {
+    margin: 4px;
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+}
+
+.home__image {
+    height: 100vh;
+	width: 100%;
+	/* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+@media only screen and (min-width:1025px){
+    .menu {
+        width: 1100px;
+    }
+}
+@media only screen and (max-width:500px){
+    .banner__inner {
+        padding: 10px;
+        width: 90%;
+    }
+}

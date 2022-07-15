@@ -1,0 +1,15 @@
+.checkout {
+    background: linear-gradient(#403e40, #121416);
+    min-height: 100vh;
+    padding: 0 50px 50px 50px;
+    color: white;
+
+}
+hr {
+    border: 1px solid #957d56;
+    margin: 25px 10px;
+}
+.checkout h2{
+    text-align: center;
+    margin: 25px;
+}

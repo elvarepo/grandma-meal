@@ -1,0 +1,50 @@
+.dish{
+    width: 300px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid #957d56;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.dish__image img {
+    width: 100%;
+    object-fit: cover;
+}
+.dish__middle {
+    display: flex;
+    justify-content: space-between;
+}
+.dish__middle .flash {
+    display: none;
+    padding: 3px 7px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: dodgerblue;
+}
+.dish__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish p{
+    margin: 2.5px;
+}
+button {
+    font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+    padding: 4px;
+    background-color:#d9484f;
+    border-color: #d9484f;
+    border-radius: 4px;
+}
+button:hover {
+    cursor: pointer;
+}
+.btn {
+    content: attr(data-tooltip)
+}

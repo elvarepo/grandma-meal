@@ -1,0 +1,40 @@
+.contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(#403e40, #121416);
+}
+.contact__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #957d56;
+    border-radius: 5px;
+    padding: 20px 10px 50px 10px;
+    color: #f7f6f4;
+}
+.contact h2 {
+    margin-bottom: 20px;
+    color: #f7f6f4;
+}
+.contact__form input, textarea, label {
+    margin: 0px 5px;
+    padding: 3px;
+    background-color: transparent;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+.contact__form input, textarea {
+    border: 1px solid gray;
+    color: #f7f6f4;
+    font-family: Publico,Georgia,serif;
+    outline: none;
+    letter-spacing: 1px;
+}
+.contact__form textarea {
+    height: 100px;
+}
+.contact_btn {
+    margin: 25px 5px 0px 5px;
+}

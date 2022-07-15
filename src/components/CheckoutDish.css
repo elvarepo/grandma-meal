@@ -1,0 +1,34 @@
+img{
+    width: 170px;
+}
+.checkoutDish{
+    margin: 10px;
+}
+.checkoutDish__n {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.checkoutDish__info{
+    align-self: flex-end;
+    font-size: 13px;
+}
+.add_bm {
+    margin-top: 5px;
+}
+
+.checkoutDish__price {
+    margin-bottom: 5px;
+}
+
+
+
+@media screen and (max-width: 468px){
+    .checkoutDish__n {
+        flex-direction: column;
+    }
+    .checkoutDish__info{
+        align-self: unset;
+    }
+}

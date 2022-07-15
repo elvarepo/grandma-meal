@@ -1,0 +1,39 @@
+.header {
+    /* background-image: url('../images/bg4.png'); */
+    background-color: #1b1919;
+    padding: 15px;
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif; 
+    color: #d9484f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a {
+    text-decoration: none;
+}
+.header__logo {
+    border: 1px solid gold; 
+    width: 42px;
+    border-radius: 50%; 
+}
+.icon, .header__text{
+    color: #d9484f;
+}
+.header__text {
+    text-decoration: none;
+}
+.header__checkout{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.header__checkout span {
+    color: white;
+    font-size: 20px;
+}
+.header__last {
+    display: flex;
+    gap: .5em;
+}
+
+
