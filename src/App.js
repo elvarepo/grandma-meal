@@ -16,23 +16,25 @@ const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <Routes>
-            <Route path='/payment' element={
-              <Elements stripe={stripePromise}>
-                  <Payment />
-              </Elements>          
-            } >
-            </Route>
-          <Route path="/checkout" element={<Checkout />}></Route>
-          <Route path="contact" element={<Contact/>}></Route>
-          <Route path="/" element={<Home />}> </Route>
-        </Routes>
-        <Footer/>
-      </div>
-    </Router>
+    <div className='wrapper'>
+      <Router>
+        <div className="app">
+          <Header />
+          <Routes>
+              <Route path='/payment' element={
+                <Elements stripe={stripePromise}>
+                    <Payment />
+                </Elements>          
+              } >
+              </Route>
+            <Route path="/checkout" element={<Checkout />}></Route>
+            <Route path="contact" element={<Contact/>}></Route>
+            <Route path="/" element={<Home />}> </Route>
+          </Routes>
+          <Footer/>
+        </div>
+      </Router>
+    </div>
   );
 }
 

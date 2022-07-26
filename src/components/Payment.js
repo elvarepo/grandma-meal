@@ -61,7 +61,10 @@ function Payment() {
             dispatch({
                 type: 'EMPTY_BASKET'
             })
-            Swal.fire('Payment successfully!')
+            Swal.fire({
+                html:"<b>Payment successfully!</b>",
+                customClass: 'swal-bg'
+            })
             navigate('/')
         })
     }

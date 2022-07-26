@@ -1,8 +1,25 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none;
 }
 .app{
   display: flex;
   flex-direction: column; 
+  -ms-overflow-style: none; 
 }
+/* for Internet Explorer, Edge */ 
+
+::-webkit-scrollbar {   /* this remove scrollbar from web view not mobile view */
+  display: none;
+} 
+
+/*  .wrapper{
+  display: flex;
+  flex-direction: column; 
+  -ms-overflow-style: none; 
+} */     /* for Internet Explorer, Edge */
+
+/*.wrapper::-webkit-scrollbar {
+  display: none;
+} */

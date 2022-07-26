@@ -11,40 +11,70 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
+
 .dish__image img {
     width: 100%;
     object-fit: cover;
 }
-.dish__middle {
-    display: flex;
-    justify-content: space-between;
-}
-.dish__middle .flash {
-    display: none;
-    padding: 3px 7px;
-    font-size: 12px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: dodgerblue;
-}
+
 .dish__info {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-top: 5px;
 }
 
-.dish p{
+.dish-name{
     margin: 2.5px;
 }
+
 button {
     font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
     padding: 4px;
     background-color:#d9484f;
     border-color: #d9484f;
     border-radius: 4px;
+    color: black;
 }
+
 button:hover {
     cursor: pointer;
 }
-.btn {
-    content: attr(data-tooltip)
+
+.btn-hide{
+    display: none;
 }
+.btn-show {
+background: #c2a473;
+padding: 5px;
+border-radius: 3px;
+position: absolute; 
+top: -.25rem;
+right: -11%;
+transform: translateX(-50%) translateY(-100%);
+animation: fade-out 2s;
+width: 70px;
+height: 27px;
+color: black;
+font-size: 14px;
+text-align: center;
+}
+
+.btn-show::after{
+    content: '';
+    border: 5px solid transparent;
+    width: 1px;
+    display: block;
+    position: relative;
+    transform: translateX(210%) translateY(40%);
+    border-top-color: #c2a473;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+} 

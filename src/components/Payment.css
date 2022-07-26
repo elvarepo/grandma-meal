@@ -35,3 +35,9 @@
 .payment__priceContainer h3{
     margin: 10px 0px;
 }
+
+@media screen and (max-width:400px){
+    .swal-bg{
+        width: 330px !important;
+    }
+}
